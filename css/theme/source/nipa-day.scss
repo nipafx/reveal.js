@@ -96,27 +96,19 @@ $quoteBackgroundColor: $mainColor;
 }
 
 // center code blocks (while keeping lines left aligned)
-.reveal .listingblock {
-	float: left;
-	width: 100%;
+.reveal .listingblock .content {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 
-	.content {
-		float: left;
-		position: relative;
-		left: 50%;
+	pre {
+		width: inherit;
 
-		pre {
-			float: left;
-			position: relative;
-			left: -50%;
-			width: inherit;
-
-			code {
-				padding: 10px;
-				max-height: none;
-				font-size: 150%;
-				line-height: 120%;
-			}
+		code {
+			padding: 10px;
+			max-height: none;
+			font-size: 150%;
+			line-height: 120%;
 		}
 	}
 }
