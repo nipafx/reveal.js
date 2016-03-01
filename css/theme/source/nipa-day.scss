@@ -40,9 +40,12 @@ $quoteEmColor: lighten($quoteColor, 20%);
 $quoteBackgroundColor: $mainColor;
 
 .reveal .slides {
-	padding: 10px;
 	border-radius: 10px;
 	background-color: rgba(255, 255, 255, 0.8);
+}
+.slides > section > section {
+	padding: 10px !important;
+	box-sizing: border-box;
 }
 
 // make blockquotes a little nicer
