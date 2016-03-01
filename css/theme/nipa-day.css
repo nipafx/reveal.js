@@ -47,23 +47,17 @@
   border: none !important;
   box-shadow: none !important; }
 
-.reveal .listingblock {
-  float: left;
-  width: 100%; }
-  .reveal .listingblock .content {
-    float: left;
-    position: relative;
-    left: 50%; }
-    .reveal .listingblock .content pre {
-      float: left;
-      position: relative;
-      left: -50%;
-      width: inherit; }
-      .reveal .listingblock .content pre code {
-        padding: 10px;
-        max-height: none;
-        font-size: 150%;
-        line-height: 120%; }
+.reveal .listingblock .content {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .reveal .listingblock .content pre {
+    width: inherit; }
+    .reveal .listingblock .content pre code {
+      padding: 10px;
+      max-height: none;
+      font-size: 150%;
+      line-height: 120%; }
 
 .fragment.dim:not(.visible) {
   color: inherit;
