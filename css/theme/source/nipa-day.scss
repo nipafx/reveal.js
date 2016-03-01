@@ -19,6 +19,7 @@
 
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #FFF;
+$slideBackgroundColor: rgba(255, 255, 255, 0.8);
 
 $mainColor: #111;
 $dimColor: lighten( $mainColor, 50% );
@@ -40,8 +41,9 @@ $quoteEmColor: lighten($quoteColor, 20%);
 $quoteBackgroundColor: $mainColor;
 
 .reveal .slides {
+	bottom: 20px;
 	border-radius: 10px;
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: $slideBackgroundColor;
 }
 .slides > section > section {
 	padding: 10px !important;
@@ -130,6 +132,37 @@ $quoteBackgroundColor: $mainColor;
 }
 .fragment.current-display {
 	display: none;
+}
+
+// footer
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background-color: $slideBackgroundColor;
+
+	p {
+		padding: 10px;
+		padding-top: 0;
+		margin: 0;
+		font-family: $mainFont;
+		font-size: 15px;
+		font-weight: normal;
+		color: $mainColor;
+	}
+
+	a {
+		color: $mainColor;
+		text-decoration: none;
+	}
+
+	.logo {
+		height: 22px;
+		position: relative;
+		bottom: -5px;
+	}
 }
 
 // Theme template ------------------------------

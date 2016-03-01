@@ -7,6 +7,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
 .reveal .slides {
+  bottom: 20px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.8); }
 
@@ -72,6 +73,29 @@
 
 .fragment.current-display {
   display: none; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.8); }
+  footer p {
+    padding: 10px;
+    padding-top: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: #111; }
+  footer a {
+    color: #111;
+    text-decoration: none; }
+  footer .logo {
+    height: 22px;
+    position: relative;
+    bottom: -5px; }
 
 /*********************************************
  * GLOBAL STYLES
