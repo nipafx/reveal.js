@@ -14,7 +14,7 @@ $blockMargin: 10px;
 
 // create rounded-corner background with proper padding
 .reveal .slides {
-	bottom: 20px;
+	bottom: 35px;
 	border-radius: 10px;
 	background-color: $slideBackgroundColor;
 }
@@ -122,7 +122,7 @@ footer {
 		padding-top: 0;
 		margin: 0;
 		font-family: $mainFont;
-		font-size: 15px;
+		font-size: 20px;
 		font-weight: normal;
 		color: $mainColor;
 	}
@@ -133,7 +133,7 @@ footer {
 	}
 
 	.logo {
-		height: 22px;
+		height: 30px;
 		position: relative;
 		bottom: -5px;
 	}
