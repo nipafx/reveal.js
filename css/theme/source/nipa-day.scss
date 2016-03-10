@@ -18,8 +18,9 @@ $slideBackgroundColor: rgba(255, 255, 255, 0.8);
 $headingColor: black;
 $mainColor: #111;
 $dimColor: lighten( $mainColor, 50% );
-$linkColor: orange;
+$linkColor: #0048ab;
 $linkColorHover: lighten( $linkColor, 20% );
+$linkFontweight: bold;
 $selectionBackgroundColor: violet;
 
 $quoteColor: darken($backgroundColor, 10%);

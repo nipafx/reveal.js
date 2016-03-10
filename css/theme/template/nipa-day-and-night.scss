@@ -12,15 +12,21 @@ $headingTextTransform: capitalize;
 $headingMargin: 0 0 30px 0;
 $blockMargin: 10px;
 
-// create rounded-corner background with proper padding
+// move the slides up because it looks a little better
 .reveal .slides {
 	bottom: 35px;
+}
+
+// create round-cornered, content-sized background with proper padding
+.reveal .slides > section > section {
+	padding: 10px !important;
+	box-sizing: border-box;
 	border-radius: 10px;
 	background-color: $slideBackgroundColor;
 }
-.slides > section > section {
-	padding: 10px !important;
-	box-sizing: border-box;
+// if the slide is "empty" remove the background
+.empty .reveal .slides > section > section {
+	background-color: inherit;
 }
 
 // make blockquotes a little nicer
@@ -82,7 +88,7 @@ $blockMargin: 10px;
 		code {
 			padding: 10px;
 			max-height: none;
-			font-size: 150%;
+			font-size: 180%;
 			line-height: 120%;
 		}
 	}
