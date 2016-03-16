@@ -17,12 +17,22 @@ $blockMargin: 10px;
 	bottom: 35px;
 }
 
-// create round-cornered, content-sized background with proper padding
-.reveal .slides > section > section {
+// create slide background as mixin
+@mixin slide-background {
 	padding: 10px !important;
 	box-sizing: border-box;
 	border-radius: 10px;
 	background-color: $slideBackgroundColor;
+}
+
+// style title slide
+#title-slide {
+	@include slide-background;
+}
+
+// create round-cornered, content-sized background with proper padding
+.reveal .slides > section > section {
+	@include slide-background;
 }
 // if the slide is "empty" remove the background
 .empty .reveal .slides > section > section {
