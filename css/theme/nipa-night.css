@@ -14,6 +14,32 @@
   box-sizing: border-box;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.9); }
+  #title-slide .event {
+    display: flex;
+    justify-content: space-between; }
+  #title-slide .participant {
+    height: 80px;
+    width: 250px;
+    padding: 0px 20px; }
+  #title-slide .logo {
+    height: 70px;
+    padding: 0 10px 0 0;
+    margin: 0;
+    float: left; }
+  #title-slide .name {
+    padding: 5px; }
+    #title-slide .name p {
+      padding: 0;
+      margin: 0;
+      font-family: "Open Sans", sans-serif;
+      font-size: 25px;
+      font-weight: normal;
+      color: #EEE;
+      text-align: left; }
+      #title-slide .name p a {
+        color: #EEE;
+        text-decoration: inherit;
+        font-weight: inherit; }
 
 .reveal .slides > section > section {
   padding: 10px !important;

@@ -28,6 +28,47 @@ $blockMargin: 10px;
 // style title slide
 #title-slide {
 	@include slide-background;
+
+	.event {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.participant {
+
+		height: 80px;
+		width: 250px;
+		padding: 0px 20px;
+	}
+
+	.logo {
+		height: 70px;
+		padding: 0 10px 0 0;
+		margin: 0;
+		float: left;
+	}
+
+	.name {
+
+		padding: 5px;
+
+		p {
+			padding: 0;
+			margin: 0;
+			font-family: $mainFont;
+			font-size: 25px;
+			font-weight: normal;
+			color: $mainColor;
+			text-align: left;
+
+			// there will usually be a lot of links, which should not be too striking
+			a {
+				color: $mainColor;
+				text-decoration: inherit;
+				font-weight: inherit;
+			}
+		}
+	}
 }
 
 // create round-cornered, content-sized background with proper padding
