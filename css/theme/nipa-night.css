@@ -9,6 +9,12 @@
 .reveal .slides {
   bottom: 35px; }
 
+#title-slide {
+  padding: 10px !important;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.9); }
+
 .reveal .slides > section > section {
   padding: 10px !important;
   box-sizing: border-box;
