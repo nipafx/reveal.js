@@ -157,6 +157,10 @@ footer .logo {
   background-color: #EEE !important;
   border-radius: 2px; }
 
+.diagram {
+  -webkit-filter: invert(100%);
+  filter: invert(100%); }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
