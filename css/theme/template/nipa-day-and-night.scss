@@ -18,39 +18,43 @@ $blockMargin: 10px;
 }
 
 // create slide background as mixin
-@mixin slide-background {
-	padding: 10px !important;
+@mixin raw-slide-background {
 	box-sizing: border-box;
 	border-radius: 10px;
 	background-color: $slideBackgroundColor;
 }
+@mixin slide-background {
+	padding: 10px;
+	@include raw-slide-background;
+}
 
 // style title slide
-#title-slide {
-	@include slide-background;
+.title-slide {
+
+	@include raw-slide-background;
 
 	.event {
 		display: flex;
 		justify-content: space-between;
+		margin: 0px 30px;
 	}
 
 	.participant {
-
 		height: 80px;
-		width: 250px;
-		padding: 0px 20px;
+		width: 350px;
+		margin: 0px 30px;
 	}
 
 	.logo {
 		height: 70px;
-		padding: 0 10px 0 0;
-		margin: 0;
+		margin: 0 10px 0 0;
+		padding: 5px;
 		float: left;
 	}
 
 	.name {
 
-		padding: 5px;
+		margin: 5px;
 
 		p {
 			padding: 0;
@@ -70,6 +74,10 @@ $blockMargin: 10px;
 		}
 	}
 }
+.title-slide footer {
+	display: none;
+}
+
 
 // create round-cornered, content-sized background with proper padding
 .reveal .slides > section > section {
