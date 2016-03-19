@@ -36,6 +36,11 @@ $quoteBackgroundColor: $mainColor;
 	border-radius: 5px;
 }
 
+footer .logo {
+	background-color: $mainColor !important;
+	border-radius: 2px;
+}
+
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------

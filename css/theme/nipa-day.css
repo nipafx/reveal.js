@@ -118,22 +118,30 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.9); }
-  footer p {
-    padding: 10px;
-    padding-top: 0;
-    margin: 0;
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    color: #111; }
-  footer a {
-    color: #111;
-    text-decoration: none; }
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px 30px 0 30px; }
+  footer .participant {
+    width: 450px;
+    margin: 0px 30px; }
   footer .logo {
-    height: 30px;
-    position: relative;
-    bottom: -5px; }
+    height: 25px;
+    padding: 2px;
+    margin: 0px 10px 0 0;
+    float: left; }
+  footer .name {
+    margin: 5px; }
+    footer .name p {
+      padding: 0;
+      margin: 0;
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      font-weight: normal;
+      color: #111;
+      text-align: left; }
+      footer .name p a {
+        color: #111;
+        text-decoration: inherit;
+        font-weight: inherit; }
 
 /*********************************************
  * GLOBAL STYLES
