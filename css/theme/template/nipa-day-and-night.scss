@@ -80,6 +80,9 @@ $blockMargin: 10px;
 
 
 // create round-cornered, content-sized background with proper padding
+.no-children .slides > section {
+	@include slide-background;
+}
 .reveal .slides > section > section {
 	@include slide-background;
 }
