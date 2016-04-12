@@ -32,6 +32,15 @@ $blockMargin: 10px;
 	padding: 10px;
 	@include raw-slide-background;
 }
+// create round-cornered, content-sized background with proper padding
+.reveal .slides > section,
+.reveal .slides > section > section {
+	@include slide-background;
+}
+// if the slide is "empty" remove the background
+.empty .reveal .slides section {
+	background-color: inherit;
+}
 
 // style title slide
 .title-slide {
@@ -83,18 +92,6 @@ $blockMargin: 10px;
 	display: none;
 }
 
-
-// create round-cornered, content-sized background with proper padding
-.no-children .slides > section {
-	@include slide-background;
-}
-.reveal .slides > section > section {
-	@include slide-background;
-}
-// if the slide is "empty" remove the background
-.empty .reveal .slides > section > section {
-	background-color: inherit;
-}
 
 // make blockquotes a little nicer
 .reveal .quoteblock {
