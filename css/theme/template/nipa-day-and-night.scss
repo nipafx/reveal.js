@@ -9,12 +9,17 @@ $headingFont: 'Montserrat', Impact, sans-serif;
 $headingLetterSpacing: -0.03em;
 $headingTextTransform: capitalize;
 
-$headingMargin: 0 0 30px 0;
+$headingMargin: 0 0 20px 0;
 $blockMargin: 10px;
 
 // move the slides up because it looks a little better
 .reveal .slides {
-	bottom: 35px;
+	bottom: 30px;
+}
+
+// add space above h3 (looks better if used within slide)
+.reveal h3 {
+	margin-top: 30px !important;
 }
 
 // create slide background as mixin
