@@ -12,6 +12,16 @@
 .reveal h3 {
   margin-top: 30px !important; }
 
+.reveal .slides > section,
+.reveal .slides > section > section {
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.9); }
+
+.empty .reveal .slides section {
+  background-color: inherit; }
+
 .title-slide {
   box-sizing: border-box;
   border-radius: 10px;
@@ -46,21 +56,6 @@
 
 .title-slide footer {
   display: none; }
-
-.no-children .slides > section {
-  padding: 10px;
-  box-sizing: border-box;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.9); }
-
-.reveal .slides > section > section {
-  padding: 10px;
-  box-sizing: border-box;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.9); }
-
-.empty .reveal .slides > section > section {
-  background-color: inherit; }
 
 .reveal .quoteblock {
   width: 90%;
