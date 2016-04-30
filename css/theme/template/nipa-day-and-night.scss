@@ -93,6 +93,17 @@ $blockMargin: 10px;
 }
 
 
+// style table of contents
+.reveal .toc {
+	font-weight: bold;
+
+	.toc-current td {
+		color: $linkColor;
+		border-color: $mainColor;
+	}
+}
+
+
 // make blockquotes a little nicer
 .reveal .quoteblock {
 	width: 90%;
