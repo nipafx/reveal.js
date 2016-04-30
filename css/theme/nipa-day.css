@@ -57,6 +57,12 @@
 .title-slide footer {
   display: none; }
 
+.reveal .toc {
+  font-weight: bold; }
+  .reveal .toc .toc-current td {
+    color: #0048ab;
+    border-color: #111; }
+
 .reveal .quoteblock {
   width: 90%;
   padding: 10px;
