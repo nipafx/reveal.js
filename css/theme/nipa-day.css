@@ -63,6 +63,9 @@
     color: #0048ab;
     border-color: #111; }
 
+.no-title h2 {
+  display: none; }
+
 .reveal .quoteblock {
   width: 90%;
   padding: 10px;

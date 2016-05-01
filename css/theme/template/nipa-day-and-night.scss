@@ -103,6 +103,10 @@ $blockMargin: 10px;
 	}
 }
 
+.no-title h2 {
+	display: none;
+}
+
 
 // make blockquotes a little nicer
 .reveal .quoteblock {
