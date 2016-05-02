@@ -149,7 +149,7 @@ $blockMargin: 10px;
 }
 
 // remove all shenanigans from image blocks
-.reveal section img {
+.reveal section img :not(.diagram) {
 	background: none !important;
 	border: none !important;
 	box-shadow: none !important;
