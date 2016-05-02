@@ -94,7 +94,7 @@
   .reveal .quoteblock .attribution {
     color: #2b2b2b; }
 
-.reveal section img {
+.reveal section img :not(.diagram) {
   background: none !important;
   border: none !important;
   box-shadow: none !important; }
@@ -164,9 +164,10 @@ footer .logo {
   background-color: #EEE !important;
   border-radius: 2px; }
 
-.diagram {
-  -webkit-filter: invert(100%);
-  filter: invert(100%); }
+.diagram img {
+  background: none !important;
+  border: none !important;
+  box-shadow: 0px 0px 20px 20px white !important; }
 
 /*********************************************
  * GLOBAL STYLES
