@@ -94,7 +94,7 @@
   .reveal .quoteblock .attribution {
     color: #e6e6e6; }
 
-.reveal section img {
+.reveal section img :not(.diagram) {
   background: none !important;
   border: none !important;
   box-shadow: none !important; }

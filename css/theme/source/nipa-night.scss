@@ -41,9 +41,10 @@ footer .logo {
 	border-radius: 2px;
 }
 
-.diagram {
-	-webkit-filter: invert(100%);
-	filter: invert(100%);
+.diagram img {
+	background: none !important;
+	border: none !important;
+	box-shadow: 0px 0px 20px 20px white !important;
 }
 
 // Theme template ------------------------------
