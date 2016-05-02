@@ -173,6 +173,31 @@ $blockMargin: 10px;
 	}
 }
 
+// implement "loweralpha" tag
+.reveal .loweralpha {
+	list-style-type: lower-alpha;
+}
+
+.reveal .conversation {
+
+	margin: 0 auto;
+	width: 80%;
+	text-align: inherit;
+
+	p {
+		margin: 5px 0px;
+	}
+
+	.left {
+		text-align: left;
+	}
+
+	.right {
+		text-align: right;
+	}
+
+}
+
 // allow "fragment dim",
 // which dims a fragment on the specified fragment index
 .fragment.dim:not(.visible) {
