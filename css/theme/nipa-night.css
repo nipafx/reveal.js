@@ -111,6 +111,20 @@
       font-size: 180%;
       line-height: 120%; }
 
+.reveal .loweralpha {
+  list-style-type: lower-alpha; }
+
+.reveal .conversation {
+  margin: 0 auto;
+  width: 80%;
+  text-align: inherit; }
+  .reveal .conversation p {
+    margin: 5px 0px; }
+  .reveal .conversation .left {
+    text-align: left; }
+  .reveal .conversation .right {
+    text-align: right; }
+
 .fragment.dim:not(.visible) {
   color: inherit;
   visibility: inherit !important;
