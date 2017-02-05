@@ -43,7 +43,7 @@ $blockMargin: 10px;
 }
 
 // style title slide
-.title-slide {
+.title {
 
 	@include raw-slide-background;
 
@@ -87,7 +87,7 @@ $blockMargin: 10px;
 		}
 	}
 }
-.title-slide footer {
+.title footer {
 	display: none;
 }
 
