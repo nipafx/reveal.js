@@ -22,25 +22,25 @@
 .empty .reveal .slides section {
   background-color: inherit; }
 
-.title-slide {
+.title {
   box-sizing: border-box;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.9); }
-  .title-slide .event {
+  .title .event {
     display: flex;
     justify-content: space-between;
     margin: 0px 30px; }
-  .title-slide .participant {
+  .title .participant {
     height: 80px;
     width: 350px;
     margin: 0px 30px; }
-  .title-slide .logo {
+  .title .logo {
     height: 60px;
     margin: 0 10px 0 0;
     float: left; }
-  .title-slide .name {
+  .title .name {
     margin: 5px; }
-    .title-slide .name p {
+    .title .name p {
       padding: 0;
       margin: 0;
       font-family: "Open Sans", sans-serif;
@@ -48,12 +48,12 @@
       font-weight: normal;
       color: #111;
       text-align: left; }
-      .title-slide .name p a {
+      .title .name p a {
         color: #111;
         text-decoration: inherit;
         font-weight: inherit; }
 
-.title-slide footer {
+.title footer {
   display: none; }
 
 .reveal .toc {
@@ -183,6 +183,11 @@ body {
   color: #111; }
 
 ::selection {
+  color: #fff;
+  background: violet;
+  text-shadow: none; }
+
+::-moz-selection {
   color: #fff;
   background: violet;
   text-shadow: none; }
@@ -344,7 +349,8 @@ body {
 .reveal table td[align="right"] {
   text-align: right; }
 
-.reveal table tr:last-child td {
+.reveal table tbody tr:last-child th,
+.reveal table tbody tr:last-child td {
   border-bottom: none; }
 
 .reveal sup {
