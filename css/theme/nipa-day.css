@@ -138,6 +138,9 @@
 .fragment.current-display {
   display: none; }
 
+.reveal .small-note {
+  font-size: 0.70em; }
+
 footer {
   position: fixed;
   bottom: 0;
