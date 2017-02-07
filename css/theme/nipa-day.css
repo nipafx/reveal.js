@@ -110,6 +110,13 @@
       font-size: 150%;
       line-height: 120%; }
 
+.reveal pre code.hljs {
+  display: block; }
+
+.reveal code.hljs {
+  display: inline;
+  background-color: transparent; }
+
 .reveal .loweralpha {
   list-style-type: lower-alpha; }
 

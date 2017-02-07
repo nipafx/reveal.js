@@ -172,6 +172,16 @@ $blockMargin: 10px;
 	}
 }
 
+// style code hhighlighting for inline display
+.reveal pre code.hljs {
+	display: block;
+}
+
+.reveal code.hljs {
+	display: inline;
+	background-color: transparent;
+}
+
 // implement "loweralpha" tag
 .reveal .loweralpha {
 	list-style-type: lower-alpha;
