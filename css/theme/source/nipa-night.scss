@@ -48,6 +48,12 @@ footer .logo {
 	box-shadow: 0px 0px 20px 20px white !important;
 }
 
+// night blockquotes are bright and so is code highlighting
+// ~> invert colors
+.reveal blockquote code.hljs {
+	filter: invert(100%);
+}
+
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------

@@ -110,6 +110,13 @@
       font-size: 150%;
       line-height: 120%; }
 
+.reveal pre code.hljs {
+  display: block; }
+
+.reveal code.hljs {
+  display: inline;
+  background-color: transparent; }
+
 .reveal .loweralpha {
   list-style-type: lower-alpha; }
 
@@ -185,6 +192,9 @@ footer .logo {
   background-color: white !important;
   border: none !important;
   box-shadow: 0px 0px 20px 20px white !important; }
+
+.reveal blockquote code.hljs {
+  filter: invert(100%); }
 
 /*********************************************
  * GLOBAL STYLES
