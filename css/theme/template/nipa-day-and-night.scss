@@ -17,11 +17,6 @@ $blockMargin: 10px;
 	bottom: 30px;
 }
 
-// add space above h3 (looks better if used within slide)
-.reveal h3 {
-	margin-top: 30px !important;
-}
-
 // create slide background as mixin
 @mixin raw-slide-background {
 	box-sizing: border-box;
