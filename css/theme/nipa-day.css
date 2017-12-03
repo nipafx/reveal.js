@@ -18,6 +18,8 @@
 
 .empty .reveal .slides section {
   background-color: inherit; }
+.empty footer {
+  display: none; }
 
 .title {
   box-sizing: border-box;

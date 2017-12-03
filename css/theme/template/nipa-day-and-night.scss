@@ -32,9 +32,12 @@ $blockMargin: 10px;
 .reveal .slides > section > section {
 	@include slide-background;
 }
-// if the slide is "empty" remove the background
+// if the slide is "empty" remove the background and footer
 .empty .reveal .slides section {
 	background-color: inherit;
+}
+.empty footer {
+	display: none;
 }
 
 // style title slide
