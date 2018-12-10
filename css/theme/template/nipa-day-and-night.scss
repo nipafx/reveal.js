@@ -170,14 +170,20 @@ $blockMargin: 10px;
 	}
 }
 
-// style code hhighlighting for inline display
+// style code highlighting for inline display
 .reveal pre code.hljs {
 	display: block;
 }
 
 .reveal code.hljs {
 	display: inline;
+	font-weight: bold;
+	color: $blockCodeColor;
 	background-color: transparent;
+}
+
+.reveal :not(pre) > code.hljs {
+	color: $inlineCodeColor;
 }
 
 // implement "loweralpha" tag

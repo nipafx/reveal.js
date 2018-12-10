@@ -23,6 +23,9 @@ $linkColorHover: lighten( $linkColor, 20% );
 $linkFontweight: bold;
 $selectionBackgroundColor: violet;
 
+$blockCodeColor: white;
+$inlineCodeColor: white;
+
 $quoteColor: lighten($backgroundColor, 10%);
 $quoteEmColor: darken($quoteColor, 20%);
 $quoteBackgroundColor: $mainColor;

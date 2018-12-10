@@ -115,7 +115,12 @@
 
 .reveal code.hljs {
   display: inline;
+  font-weight: bold;
+  color: black;
   background-color: transparent; }
+
+.reveal :not(pre) > code.hljs {
+  color: black; }
 
 .reveal .loweralpha {
   list-style-type: lower-alpha; }
