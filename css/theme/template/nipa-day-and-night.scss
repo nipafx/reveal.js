@@ -237,6 +237,61 @@ $blockMargin: 10px;
 	font-size: 0.70em;
 }
 
+.gallery .reveal .slides > section,
+.gallery .reveal .slides > section > section {
+	// background-color: transparent;
+	padding: 0;
+	font-size: 1.1em;
+
+	h2 {
+		display: none;
+	}
+}
+
+.gallery.bg-bottom-left .slide-background > div {
+	background-position: bottom left;
+}
+
+.gallery.media .slide-background-content {
+	filter: blur(30px);
+}
+
+.gallery.media .reveal .slides > section ,
+.gallery.media .reveal .slides > section section {
+	background-color: transparent;
+
+	video {
+		@include slide-background;
+	}
+}
+
+.gallery.top .reveal .slides > section,
+.gallery.top .reveal .slides > section > section {
+	margin-top: -10%;
+}
+
+.gallery.bottom .reveal .slides > section,
+.gallery.bottom .reveal .slides > section > section {
+	margin-top: 10%;
+}
+
+.gallery.wide .reveal .slides > section,
+.gallery.wide .reveal .slides > section > section {
+	width: 110%;
+}
+
+.gallery.left .reveal .slides > section,
+.gallery.left .reveal .slides > section > section {
+	width: 75%;
+	margin-left: -10%;
+}
+
+.gallery.right .reveal .slides > section,
+.gallery.right .reveal .slides > section > section {
+	width: 75%;
+	margin-left: 30%;
+}
+
 // footer
 footer {
 
