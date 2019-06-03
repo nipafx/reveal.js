@@ -33,6 +33,7 @@ $blockMargin: 10px;
 	@include slide-background;
 }
 // if the slide is "empty" remove the background and footer
+.transparent-slide .reveal .slides section,
 .empty .reveal .slides section {
 	background-color: inherit;
 }
