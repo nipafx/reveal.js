@@ -28,7 +28,7 @@ $blockMargin: 10px;
 	@include raw-slide-background;
 }
 // create round-cornered, content-sized background with proper padding
-.reveal .slides > section,
+.reveal .slides > section:not(.stack),
 .reveal .slides > section > section {
 	@include slide-background;
 }
@@ -94,6 +94,11 @@ $blockMargin: 10px;
 // style table of contents
 .reveal .toc {
 	font-weight: bold;
+	border: none;
+
+	td {
+		padding: 0.15em 0.5em;
+	}
 
 	.toc-current td {
 		color: $linkColor;
@@ -105,6 +110,11 @@ $blockMargin: 10px;
 	display: none;
 }
 
+div.reveal a:hover {
+	img {
+		box-shadow: 0 0 10px $linkColor;
+	}
+}
 
 // make blockquotes a little nicer
 .reveal .quoteblock {
@@ -147,10 +157,10 @@ $blockMargin: 10px;
 }
 
 // remove all shenanigans from image blocks
-.reveal section img :not(.diagram) {
-	background: none !important;
-	border: none !important;
-	box-shadow: none !important;
+div.reveal section img {
+	background: none;
+	border: none;
+	box-shadow: none;
 }
 
 // center code blocks (while keeping lines left aligned)
@@ -161,6 +171,7 @@ $blockMargin: 10px;
 
 	pre {
 		width: inherit;
+		box-shadow: none;
 
 		code {
 			padding: 10px;
@@ -283,7 +294,7 @@ $blockMargin: 10px;
 .gallery.left .reveal .slides > section,
 .gallery.left .reveal .slides > section > section {
 	width: 75%;
-	margin-left: -10%;
+	margin-left: -5%;
 }
 
 .gallery.right .reveal .slides > section,

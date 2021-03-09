@@ -9,7 +9,7 @@
 .reveal .slides {
   bottom: 30px; }
 
-.reveal .slides > section,
+.reveal .slides > section:not(.stack),
 .reveal .slides > section > section {
   padding: 10px;
   box-sizing: border-box;
@@ -58,13 +58,19 @@
   display: none; }
 
 .reveal .toc {
-  font-weight: bold; }
+  font-weight: bold;
+  border: none; }
+  .reveal .toc td {
+    padding: 0.15em 0.5em; }
   .reveal .toc .toc-current td {
     color: #0048ab;
     border-color: #111; }
 
 .no-title h2 {
   display: none; }
+
+div.reveal a:hover img {
+  box-shadow: 0 0 10px #0048ab; }
 
 .reveal .quoteblock {
   width: 90%;
@@ -94,17 +100,18 @@
   .reveal .quoteblock .attribution {
     color: #e6e5e5; }
 
-.reveal section img :not(.diagram) {
-  background: none !important;
-  border: none !important;
-  box-shadow: none !important; }
+div.reveal section img {
+  background: none;
+  border: none;
+  box-shadow: none; }
 
 .reveal .listingblock .content {
   display: flex;
   align-items: center;
   flex-direction: column; }
   .reveal .listingblock .content pre {
-    width: inherit; }
+    width: inherit;
+    box-shadow: none; }
     .reveal .listingblock .content pre code {
       padding: 10px;
       max-height: none;
@@ -193,7 +200,7 @@
 .gallery.left .reveal .slides > section,
 .gallery.left .reveal .slides > section > section {
   width: 75%;
-  margin-left: -10%; }
+  margin-left: -5%; }
 
 .gallery.right .reveal .slides > section,
 .gallery.right .reveal .slides > section > section {
@@ -373,7 +380,7 @@ body {
   font-family: monospace;
   line-height: 1.2em;
   word-wrap: break-word;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15); }
 
 .reveal code {
   font-family: monospace;
