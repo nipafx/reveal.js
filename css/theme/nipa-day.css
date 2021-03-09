@@ -4,8 +4,41 @@
  * Based on Hakim El Hattab's theme "night".
  * Best enjoyed with an unobstrusive, favorably black & white background image.
  */
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Source Sans Pro Regular"), local("Source-Sans-Pro-Regular"), url("../../lib/font/source-sans-pro/source-sans-pro-regular.woff2") format("woff2"), url("../../lib/font/source-sans-pro/source-sans-pro-regular.woff") format("woff"), url("../../lib/font/source-sans-pro/source-sans-pro-regular.ttf") format("truetype");
+  font-display: swap; }
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Source Sans Pro SemiBold"), local("Source-Sans-Pro-SemiBold"), url("../../lib/font/source-sans-pro/source-sans-pro-semibold.woff2") format("woff2"), url("../../lib/font/source-sans-pro/source-sans-pro-semibold.woff") format("woff"), url("../../lib/font/source-sans-pro/source-sans-pro-semibold.ttf") format("truetype");
+  font-display: swap; }
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: normal;
+  src: local("Source Sans Pro Italic"), local("Source-Sans-Pro-Italic"), url("../../lib/font/source-sans-pro/source-sans-pro-italic.woff2") format("woff2"), url("../../lib/font/source-sans-pro/source-sans-pro-italic.woff") format("woff"), url("../../lib/font/source-sans-pro/source-sans-pro-italic.ttf") format("truetype");
+  font-display: swap; }
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: bold;
+  src: local("Source Sans Pro SemiBoldItalic"), local("Source-Sans-Pro-SemiBoldItalic"), url("../../lib/font/source-sans-pro/source-sans-pro-semibolditalic.woff2") format("woff2"), url("../../lib/font/source-sans-pro/source-sans-pro-semibolditalic.woff") format("woff"), url("../../lib/font/source-sans-pro/source-sans-pro-semibolditalic.ttf") format("truetype");
+  font-display: swap; }
+
+@font-face {
+  font-family: "Bedstead";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Bedstead Regular"), local("Bedstead-Regular"), local("BedsteadRegular"), url("../../lib/font/bedstead-regular.otf") format("opentype");
+  font-display: swap; }
+
 .reveal .slides {
   bottom: 30px; }
 
@@ -47,7 +80,7 @@
     .title .name p {
       padding: 0;
       margin: 0;
-      font-family: "Open Sans", sans-serif;
+      font-family: "Source Sans Pro", sans-serif;
       font-size: 25px;
       font-weight: normal;
       color: #111;
@@ -126,7 +159,9 @@ div.reveal section img {
 
 .reveal code.hljs {
   display: inline;
-  font-weight: bold;
+  font-size: 0.9em;
+  font-family: Bedstead, monospace;
+  padding: 0;
   color: black;
   background-color: transparent; }
 
@@ -234,7 +269,7 @@ footer {
     footer .name p {
       padding: 0;
       margin: 0;
-      font-family: "Open Sans", sans-serif;
+      font-family: "Source Sans Pro", sans-serif;
       font-size: 20px;
       font-weight: normal;
       color: #111;
@@ -252,7 +287,7 @@ body {
   background-color: #FFF; }
 
 .reveal {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 35px;
   font-weight: normal;
   color: #111; }
@@ -283,10 +318,10 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: black;
-  font-family: "Montserrat", Impact, sans-serif;
+  font-family: "Source Sans Pro", Impact, sans-serif;
   font-weight: normal;
   line-height: 1.2;
-  letter-spacing: -0.03em;
+  letter-spacing: 0em;
   text-transform: capitalize;
   text-shadow: none;
   word-wrap: break-word; }
