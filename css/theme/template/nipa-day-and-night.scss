@@ -91,25 +91,43 @@ $blockMargin: 10px;
 	display: none;
 }
 
+// use div.reveal to be more specific than reveal's style
+div.reveal section h1,
+div.reveal section h2,
+div.reveal section h3,
+div.reveal section h4,
+div.reveal section h5 {
+	font-weight: bold;
+}
+div.reveal h1 {
+	font-size: 3.5em;
+}
+div.reveal h2 {
+	font-size: 2em;
+}
+
 // style title slide
 .title {
 
 	@include raw-slide-background;
 
-	.event {
-		display: flex;
-		justify-content: space-between;
-		margin: 0px 30px;
+	h1::before {
+		content: "You. Me.";
+		display: block;
+		// result of `h2 / h1`, so "You Me" has same size as subtitle
+		font-size: 0.57em;
 	}
 
-	.participant {
-		height: 80px;
-		width: 350px;
-		margin: 0px 30px;
+	.event {
+		display: grid;
+		grid-template-columns:  1fr 1fr;
+		grid-template-rows:  auto auto;
+		grid-gap: 10px;
+		margin: 20px 30px;
 	}
 
 	.logo {
-		height: 60px;
+		height: 70px;
 		margin: 0 10px 0 0;
 		float: left;
 
@@ -165,6 +183,8 @@ $blockMargin: 10px;
 }
 
 div.reveal a:hover {
+	text-decoration: underline;
+
 	img {
 		box-shadow: 0 0 10px $linkColor;
 	}
@@ -241,7 +261,7 @@ div.reveal section img {
 	display: block;
 }
 
-// tweak highlight.js theme
+// tweak highlight.js theme and override colors
 .reveal code.hljs {
 	display: inline;
 	font-size: 0.9em;
@@ -249,6 +269,14 @@ div.reveal section img {
 	padding: 0;
 	color: $blockCodeColor;
 	background-color: transparent;
+
+	.hljs-code, .hljs-title, .hljs-keyword, .hljs-name, .hljs-section, .hljs-selector-class, .hljs-selector-tag, .hljs-attr {
+		color: $linkColor;
+	}
+
+	.hljs-string, .hljs-type, .hljs-built_in, .hljs-builtin-name, .hljs-selector-id, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-addition, .hljs-variable, .hljs-template-variable {
+		color: $dimColor;
+	}
 }
 
 .reveal :not(pre) > code.hljs {
@@ -369,7 +397,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	background-color: $slideBackgroundColor;
-	padding: 10px 30px 0 30px;
+	padding: 5px 30px;
 
 	.participant {
 		width: 450px;
@@ -377,8 +405,7 @@ footer {
 	}
 
 	.logo {
-		height: 25px;
-		padding: 2px;
+		height: 30px;
 		margin: 0px 10px 0 0;
 		float: left;
 

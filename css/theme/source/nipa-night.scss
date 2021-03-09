@@ -12,16 +12,16 @@
 // ---------------------------------------------
 
 // Override theme settings (see ../template/settings.scss)
-$backgroundColor: #111;
-$slideBackgroundColor: rgba(17, 17, 17, 0.9);
+$backgroundColor: #262429;
+$slideBackgroundColor: rgba(38, 36, 41, 0.95);
 
 $headingColor: white;
-$mainColor: #EEE;
-$dimColor: darken( $mainColor, 50% );
-$linkColor: orange;
-$linkColorHover: lighten( $linkColor, 20% );
+$mainColor: white;
+$dimColor: #aaa;
+$linkColor: #69ea7d;
+$linkColorHover: $linkColor;
 $linkFontweight: bold;
-$selectionBackgroundColor: violet;
+$selectionBackgroundColor: #606060;
 
 $blockCodeColor: white;
 $inlineCodeColor: white;
