@@ -38,7 +38,10 @@
   .title .logo {
     height: 60px;
     margin: 0 10px 0 0;
-    float: left; }
+    float: left;
+    background-color: #111;
+    border-radius: 2px;
+    border: 2px solid #111 !important; }
   .title .name {
     margin: 5px; }
     .title .name p {
@@ -222,7 +225,10 @@ footer {
     height: 25px;
     padding: 2px;
     margin: 0px 10px 0 0;
-    float: left; }
+    float: left;
+    background-color: #111;
+    border: 1px solid #111;
+    border-radius: 2px; }
   footer .name {
     margin: 5px; }
     footer .name p {

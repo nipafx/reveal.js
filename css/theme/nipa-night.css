@@ -38,7 +38,10 @@
   .title .logo {
     height: 60px;
     margin: 0 10px 0 0;
-    float: left; }
+    float: left;
+    background-color: #EEE;
+    border-radius: 2px;
+    border: 2px solid #EEE !important; }
   .title .name {
     margin: 5px; }
     .title .name p {
@@ -222,7 +225,10 @@ footer {
     height: 25px;
     padding: 2px;
     margin: 0px 10px 0 0;
-    float: left; }
+    float: left;
+    background-color: #EEE;
+    border: 1px solid #EEE;
+    border-radius: 2px; }
   footer .name {
     margin: 5px; }
     footer .name p {
@@ -238,22 +244,12 @@ footer {
         text-decoration: inherit;
         font-weight: inherit; }
 
-.title .logo {
-  background-color: #EEE;
-  border-radius: 5px; }
-
-footer .logo {
-  background-color: #EEE;
-  border-radius: 2px; }
-
-.diagram img {
-  background: none !important;
-  background-color: white !important;
-  border: none !important;
-  box-shadow: 0px 0px 20px 20px white !important; }
-
 .reveal blockquote code.hljs {
   filter: invert(100%); }
+
+.reveal section .diagram img {
+  background-color: white;
+  box-shadow: 0px 0px 10px 10px white; }
 
 /*********************************************
  * GLOBAL STYLES

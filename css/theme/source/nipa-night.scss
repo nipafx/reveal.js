@@ -34,27 +34,17 @@ $quoteBackgroundColor: $mainColor;
 @import "../template/nipa-day-and-night";
 // ---------------------------------------------
 
-.title .logo {
-	background-color: $mainColor;
-	border-radius: 5px;
-}
-
-footer .logo {
-	background-color: $mainColor;
-	border-radius: 2px;
-}
-
-.diagram img {
-	background: none !important;
-	background-color: white !important;
-	border: none !important;
-	box-shadow: 0px 0px 20px 20px white !important;
-}
-
 // night blockquotes are bright and so is code highlighting
 // ~> invert colors
 .reveal blockquote code.hljs {
 	filter: invert(100%);
+}
+
+// make sure diagrams (which often have transparent backgrounds)
+// are readable
+.reveal section .diagram img {
+	background-color: white;
+	box-shadow: 0px 0px 10px 10px white;
 }
 
 // Theme template ------------------------------
