@@ -31,6 +31,7 @@ $quoteEmColor: lighten($quoteColor, 20%);
 $quoteBackgroundColor: $mainColor;
 
 // my template ------------------------------
+@import "../template/nipa-day-and-night-fonts";
 @import "../template/nipa-day-and-night";
 // ---------------------------------------------
 

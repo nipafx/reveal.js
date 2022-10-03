@@ -31,9 +31,11 @@ $quoteEmColor: darken($quoteColor, 20%);
 $quoteBackgroundColor: $mainColor;
 
 // my template ------------------------------
+@import "../template/nipa-day-and-night-fonts";
 @import "../template/nipa-day-and-night";
 // ---------------------------------------------
 
+// customizing the template --------------------
 // night blockquotes are bright and so is code highlighting
 // ~> invert colors
 .reveal blockquote code.hljs {
@@ -46,6 +48,7 @@ $quoteBackgroundColor: $mainColor;
 	background-color: white;
 	box-shadow: 0px 0px 10px 10px white;
 }
+// ---------------------------------------------
 
 // Theme template ------------------------------
 @import "../template/theme";
