@@ -209,7 +209,7 @@ div.reveal section img {
 		color: $linkColor;
 	}
 
-	.hljs-string, .hljs-type, .hljs-built_in, .hljs-builtin-name, .hljs-selector-id, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-addition, .hljs-variable, .hljs-template-variable {
+	.hljs, .hljs-comment, .hljs-string, .hljs-type, .hljs-built_in, .hljs-builtin-name, .hljs-selector-id, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-addition, .hljs-variable, .hljs-template-variable, .hljs-tag, .hljs-subst, .hljs-params {
 		color: $dimColor;
 	}
 }

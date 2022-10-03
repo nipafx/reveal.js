@@ -182,7 +182,7 @@ div.reveal section img {
   background-color: transparent; }
   .reveal code.hljs .hljs-code, .reveal code.hljs .hljs-title, .reveal code.hljs .hljs-keyword, .reveal code.hljs .hljs-name, .reveal code.hljs .hljs-section, .reveal code.hljs .hljs-selector-class, .reveal code.hljs .hljs-selector-tag, .reveal code.hljs .hljs-attr {
     color: #69ea7d; }
-  .reveal code.hljs .hljs-string, .reveal code.hljs .hljs-type, .reveal code.hljs .hljs-built_in, .reveal code.hljs .hljs-builtin-name, .reveal code.hljs .hljs-selector-id, .reveal code.hljs .hljs-selector-attr, .reveal code.hljs .hljs-selector-pseudo, .reveal code.hljs .hljs-addition, .reveal code.hljs .hljs-variable, .reveal code.hljs .hljs-template-variable {
+  .reveal code.hljs .hljs, .reveal code.hljs .hljs-comment, .reveal code.hljs .hljs-string, .reveal code.hljs .hljs-type, .reveal code.hljs .hljs-built_in, .reveal code.hljs .hljs-builtin-name, .reveal code.hljs .hljs-selector-id, .reveal code.hljs .hljs-selector-attr, .reveal code.hljs .hljs-selector-pseudo, .reveal code.hljs .hljs-addition, .reveal code.hljs .hljs-variable, .reveal code.hljs .hljs-template-variable, .reveal code.hljs .hljs-tag, .reveal code.hljs .hljs-subst, .reveal code.hljs .hljs-params {
     color: #aaa; }
 
 .reveal :not(pre) > code.hljs {
