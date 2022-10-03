@@ -199,8 +199,8 @@ div.reveal section img {
 // tweak highlight.js theme and override colors
 .reveal code.hljs {
 	display: inline;
-	font-size: 0.9em;
-	font-family: Bedstead, monospace;
+	font-family: $codeFont;
+	font-size: $codeFontSize;
 	padding: 0;
 	color: $blockCodeColor;
 	background-color: transparent;
